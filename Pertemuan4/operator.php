@@ -96,10 +96,31 @@ $hasilTidakIdentik = $a !== $b;
 // Penambahan kode untuk menampilkan hasil
 echo "Hasil Operasi Identik ===: " . ($hasilIdentik ? 'true' : 'false') . "<br>";
 echo "Hasil Operasi Tidak Identik !==: " . ($hasilTidakIdentik ? 'true' : 'false') . "<br>";
+echo "<hr>";
 
 /**SOAL 3.5
 * Lengkapi kode program di atas sehingga bisa menampilkan hasilnya dan rapi. Simpan file tersebut, kemudian buka browser dan jalankan/refresh  localhost/dasarWeb/operator.php  Tampilkan di bawah ini  (soal no 3.5) Catat di sini apa yang anda amati
 * JAWAB
 * Pada kode PHP tersebut menggunakan jenis operator identik. Untuk menampilkannya menggunakan perintah echo.
 */
+
+/**
+ * Ada soal cerita : Sebuah restoran memiliki 45 kursi di dalamnya. Pada suatu malam, 28 kursi telah ditempati oleh pelanggan. Berapa persen kursi yang masih kosong di restoran tersebut?
+ * Buat kode program untuk langkah 16 dan tampilkan hasilnya di bawah ini beserta kode programnya
+ */
+// Variabel yang menyimpan total jumlah kursi yang tersedia di ruangan.
+    $totalKursi = 45;
+
+// Variabel yang menyimpan jumlah kursi yang sudah ditempati oleh pengunjung.
+    $kursiDitempati = 28;
+
+// Variabel yang menghitung jumlah kursi yang masih kosong.
+    $kursiKosong = $totalKursi - $kursiDitempati;
+
+// Variabel perhitungan persentase kursi yang masih kosong.
+    $persentaseKosong = ($kursiKosong / $totalKursi) * 100;
+
+// Menampilkan hasil persentase kursi yang tersisa.
+    echo "Presentase kursi kosong = {$persentaseKosong} <br>";
+    echo "<hr>";
 ?>
