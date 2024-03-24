@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styleSlideShow.css">
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        var i = 1;
+
+        function showNextImage(){
+            $('#sliderImage' + i).fadeOut(1100, function() {
+                i = (i % 3) + 1;
+                $('#sliderImage' + i).fadeIn(1100);
+            });
+
+            $('#title' + i).fadeOut(1100, function() {
+                $('#title' + i).fadeIn(1100);
+            });
+        }
+
+        $(document).ready(function(){
+            showNextImage();  // Show the first image initially
+            setInterval(showNextImage, 3000);
+        });
+    </script>
+</head>
+<body>
+    <div id="slider">
+        <img id="sliderImage1" src="img/p1.jpeg">
+        <div class="slidertitle" id="title1">Gambar 1</div>
+
+        <img id="sliderImage2" src="img/p2.jpg">
+        <div class="slidertitle" id="title2">Gambar 2</div>
+
+        <img id="sliderImage3" src="img/p3.jpg">
+        <div class="slidertitle" id="title3">Gambar 3</div>
+    </div>
+</body>
+</html>
+
+<!-- SOAL 15 -->
+<!-- Dalam kode tersebut, gambar-gambar disusun dalam urutan tertentu dengan judul yang sesuai.
+Fungsi showNextImage() mengatur animasi untuk memudar (fadeOut) dan muncul (fadeIn) antara gambar-gambar
+secara otomatis. Ini menciptakan efek slideshow dengan perpindahan otomatis setiap 3 detik. -->

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script type = "text/javascript" src = "jQuery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("h2").hide();
+                $(".subjudul").hide();
+                $("#paragraf").hide();
+                $("#paragraf.dua").hide();
+                $("div p.paragraf").hide();
+            });
+        });
+
+    </script>
+</head>
+    <body>
+        <h2> Ini adalah Judul Bab</h2>
+        <h3 class = "subjudul"> Ini adalah Sub Judul Bab</h3>
+        <p id = "paragraf"> Ini adalah Paragraf Pertama</p>
+        <p id = "paragraf" class="dua"> Ini adalah Paragraf Kedua</p>
+        <div>
+            <p class = "paragraf">
+                Ini adalah Paragraf Ketiga
+            </p>
+        </div>
+        <p> Ini Paragraf yang akan tetap ditampilkan</p>
+        <button> Klik Saya!</button>
+    </body>
+</html>
+
+<!-- SOAL 2 -->
+<!-- Fungsi hide() yang berfungsi menyembunyikan output ketika pada button
+Klik Saya! Ditekan. Seperti gambar diatas, yang aman gambar pertama menunjukkan
+output awal dan gambar kedua ketika button Klik Saya! Ditekan. -->
+
+<!-- SOAL 3 -->
+<!-- Selector terdapat pada line 7-10 penggunaan selector tersebut diawali dengan $ untuk 
+mendefinisikan jQuery dan “h2” digunakan untuk selector tag, penggunaan (.subjudul) merupakan
+implementasi dari selector id. Dan selector class ditunjukkan dengan menggunakan (#) pada kode
+tersebut contohnya (#paragraf). -->

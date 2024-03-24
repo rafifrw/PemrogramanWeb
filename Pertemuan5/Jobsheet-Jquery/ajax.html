@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Final</title>
+    <script src="jQuery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("button").click(function(){
+                $("#box").load("/dasarWeb/Pertemuan5/Jobsheet-Jquery/test-content.html");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id = "box">
+        <h2>Klik tombol dibawah untuk menampilkan konten</h2>
+    </div>
+    <button type = "button">Klik Saya!</button>
+</body>
+</html>
+
+
+<!-- SOAL 17 -->
+<!-- Kode tersebut menggunakan jQuery untuk memuat konten dari sebuah file HTML eksternal ke dalam sebuah div dengan
+id "box" saat tombol diklik. Ketika tombol diklik, fungsi load() dipanggil dengan menyertakan path ke file HTML yang akan dimuat.
+Konten dari file tersebut akan dimuat dan ditampilkan di dalam div "box" -->
